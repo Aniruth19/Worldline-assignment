@@ -1,7 +1,12 @@
 const themeToggleButton = document.getElementById("theme-toggle");
 const themeIcon = document.getElementById("theme-icon");
 
-let isDarkMode = false;
+let isDarkMode = true;
+
+document.body.classList.add("dark-theme");
+document.body.classList.remove("light-theme");
+themeIcon.src = "/images/moon.png";
+themeIcon.alt = "Dark Mode";
 
 themeToggleButton.addEventListener("click", () => {
   isDarkMode = !isDarkMode;
