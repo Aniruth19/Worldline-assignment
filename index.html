@@ -6,69 +6,143 @@
   <meta name="description" content="Aniruthan M - Personal Portfolio">
   <title>Aniruthan M | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header id="header">
     <div class="container">
-      <h1>Aniruthan M</h1>
-      <p>Worldline | Full Stack Engineer</p>
-      <button id="theme-toggle">Toggle Theme</button>
+      <h1 id="name">Aniruthan M</h1>
+      <h1 id="title">Worldline | Full Stack Engineer</h1>
+      <img id="worldline-logo" src="/images/worldline.png" alt="Worldline Logo">
+      <button id="theme-toggle" aria-label="Toggle Theme" style="position: absolute; top: 20px; right: 20px; background: transparent; border: none; cursor: pointer;">
+        <img id="theme-icon" src="/images/sun.png" alt="Light Mode" style="width: 24px; height: 24px;">
+      </button>
     </div>
   </header>
-
   <main>
     <section id="about">
       <div class="container">
-        <h2>About Me</h2>
+        <h2 style="background: linear-gradient(to left, #87e94b, #c9c9c9); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">About Me</h2>
         <p>
           I am a BE Computer Science student at Coimbatore Institute of Technology, graduating in 2025.  
           With a passion for building scalable solutions, I specialize in MERN stack, cloud computing,  
           and blockchain technology.
         </p>
-        <p>Achievements: 1st Place in Innovision24 Hackathon, Certified AWS Cloud Practitioner.</p>
+        <p>Recent Achievements: 1st Place in Innovision24 Hackathon<br> Certified AWS Cloud Practitioner.</p>
       </div>
     </section>
 
-    <section id="skills">
+    <div id="skills">
       <div class="container">
-        <h2>Skills</h2>
+        <h2 style="background: linear-gradient(to left, #ffffff, #7d7b7b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; padding-bottom: 10px;">Skills</h2>
         <div class="skill-list">
-          <div>
-            <h3>Programming</h3>
-            <ul>
-              <li>C, C++, JavaScript</li>
-              <li>React, Node.js, Express</li>
-            </ul>
+          <div class="skill-item">
+            <img src="/images/aws.svg" alt="AWS">
+            <h3>AWS</h3>
+            <p>Certified Practitioner</p>
           </div>
-          <div>
-            <h3>Tools</h3>
-            <ul>
-              <li>AWS (EC2, S3), MongoDB</li>
-              <li>Jenkins, Ansible</li>
-            </ul>
+          <div class="skill-item">
+            <img src="/images/css3.svg" alt="CSS">
+            <h3>CSS</h3>
+            <p>User Interface</p>
+          </div>
+          <div class="skill-item">
+            <img src="/images/javascript.svg" alt="JavaScript">
+            <h3>JavaScript</h3>
+            <p>Interaction</p>
+          </div>
+          <div class="skill-item">
+            <img src="/images/nodejs.svg" alt="NodeJS">
+            <h3>NodeJS</h3>
+            <p>Web Server</p>
+          </div>
+          <div class="skill-item">
+            <img src="/images/expressjs.svg" alt="ExpressJS">
+            <h3>ExpressJS</h3>
+            <p>Node Framework</p>
+          </div>
+          <div class="skill-item">
+            <img src="/images/mongodb.svg" alt="MongoDB">
+            <h3>MongoDB</h3>
+            <p>Database</p>
+          </div>
+          <div class="skill-item">
+            <img src="/images/postgresql.svg" alt="PostgreSQL">
+            <h3>PostgreSQL</h3>
+            <p>Database</p>
+          </div>
+          <div class="skill-item">
+            <img src="/images/gitlab.svg" alt="Gitlab">
+            <h3>Gitlab</h3>
+            <p>CI/CD</p>
+          </div>
+          <div class="skill-item">
+            <img src="/images/docker.svg" alt="Docker">
+            <h3>Docker</h3>
+            <p>DevOps</p>
+          </div>
+          <div class="skill-item">
+            <img src="/images/kubernets.svg" alt="Kubernetes">
+            <h3>Kubernetes</h3>
+            <p>DevOps</p>
+          </div>
+          <div class="skill-item">
+            <img src="/images/jenkins.svg" alt="Jenkins">
+            <h3>Jenkins</h3>
+            <p>DevOps</p>
+          </div>
+          <div class="skill-item">
+            <img src="/images/angular.svg" alt="Angular">
+            <h3>Angular</h3>
+            <p>Framework</p>
+          </div>
+          <div class="skill-item">
+            <img src="/images/react.svg" alt="React">
+            <h3>React</h3>
+            <p>Framework</p>
+          </div>
+          <div class="skill-item">
+            <img src="/images/tailwindcss.svg" alt="TailwindCSS">
+            <h3>TailwindCSS</h3>
+            <p>User Interface</p>
+          </div>
+          <div class="skill-item">
+            <img src="/images/gcp.svg" alt="GCP">
+            <h3>GCP</h3>
+            <p>Certified Cloud Leader</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <section id="projects">
       <div class="container">
         <h2>Projects</h2>
         <div class="project-list">
           <div class="project">
+            <div class="project-cover">
+              <img src="images/survey.jpg" alt="SurveyChain Cover Image">
+            </div>
             <h3>SurveyChain</h3>
             <p>Incentivized surveys using blockchain (PostgreSQL, React, Node.js).</p>
-            <a href="#" target="_blank">View Project</a>
+            <a href="https://harshalramrv.github.io/Project-eVault/" target="_blank">View Project</a>
           </div>
           <div class="project">
+            <div class="project-cover">
+              <img src="images/blockchain.png" alt="Evault Cover Image">
+            </div>
             <h3>Evault</h3>
             <p>Decentralized storage with Ethereum and IPFS.</p>
-            <a href="#" target="_blank">View Project</a>
+            <a href="https://harshalramrv.github.io/Project-eVault/" target="_blank">View Project</a>
           </div>
           <div class="project">
-            <h3>Static Page Hosting App</h3>
+            <div class="project-cover">
+              <img src="images/hosting.png" alt="Static Page Hosting App Cover Image">
+            </div>
+            <h3>StaticHost</h3>
             <p>Automated React project hosting with AWS S3.</p>
-            <a href="#" target="_blank">View Project</a>
+            <a href="https://harshalramrv.github.io/Project-eVault/" target="_blank">View Project</a>
           </div>
         </div>
       </div>
@@ -76,10 +150,16 @@
 
     <section id="contact">
       <div class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:aniruthan.m@example.com">aniruthan.m@example.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/aniruthan-m" target="_blank">LinkedIn</a></p>
-        <p>GitHub: <a href="https://github.com/aniruthanm" target="_blank">GitHub</a></p>
+        <h2 style="background: linear-gradient(to left, #206920, #a8e58e); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Contact</h2>
+        <form id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <button style="background: linear-gradient(to left, #206920, #a8e58e);" type="submit">Send</button>
+        </form>
       </div>
     </section>
   </main>
@@ -89,7 +169,6 @@
       <p>&copy; 2024 Aniruthan M. All Rights Reserved.</p>
     </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>

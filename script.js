@@ -1,10 +1,20 @@
+const themeToggleButton = document.getElementById("theme-toggle");
+const themeIcon = document.getElementById("theme-icon");
 
-const themeToggle = document.getElementById('theme-toggle');
-themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('light-theme');
-});
+let isDarkMode = false;
 
-document.body.classList.toggle('light-theme', {
-  backgroundColor: '#f5f5f5',
-  color: '#121212'
+themeToggleButton.addEventListener("click", () => {
+  isDarkMode = !isDarkMode;
+
+  if (isDarkMode) {
+    document.body.classList.add("dark-theme");
+    document.body.classList.remove("light-theme");
+    themeIcon.src = "/images/moon.png";
+    themeIcon.alt = "Dark Mode";
+  } else {
+    document.body.classList.add("light-theme");
+    document.body.classList.remove("dark-theme");
+    themeIcon.src = "/images/sun.png";
+    themeIcon.alt = "Light Mode";
+  }
 });
